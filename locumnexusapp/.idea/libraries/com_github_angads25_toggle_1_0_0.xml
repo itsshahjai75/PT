@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.angads25:toggle-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/toggle-1.0.0.aar/1fdc4c579b606f062181ec2db44bc6dc/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/toggle-1.0.0.aar/1fdc4c579b606f062181ec2db44bc6dc/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.angads25/toggle/1.0.0/34620214e385c0bd87417b3d53194e592ff12136/toggle-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

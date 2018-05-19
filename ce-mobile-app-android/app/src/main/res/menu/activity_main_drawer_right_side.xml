@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/grp10T"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_right_home"
+            android:icon="@drawable/ic_web_home"
+            android:title="@string/home" />
+    </group>
+
+    <group
+        android:id="@+id/grp10A"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_right_details"
+            android:icon="@drawable/ic_details"
+            android:title="@string/my_account" />
+    </group>
+    <group
+        android:id="@+id/grp10B"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_right_address"
+            android:icon="@drawable/ic_user_location"
+            android:visible="false"
+            android:title="@string/address" />
+    </group>
+    <group
+        android:id="@+id/grp10C"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_right_booking"
+            android:icon="@drawable/ic_booktable_history"
+            android:title="@string/recent_booking" />
+    </group>
+
+    <group
+        android:id="@+id/grp10N"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_right_favourite"
+            android:icon="@drawable/ic_favourite"
+            android:title="@string/my_favourites" />
+    </group>
+    <group
+        android:id="@+id/grp10D"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_right_Takeaways"
+            android:icon="@drawable/ic_ordertakehistory"
+            android:title="@string/recent_takeaways" />
+    </group>
+    <group
+        android:id="@+id/grp10E"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_right_offers"
+            android:icon="@drawable/ic_offer"
+            android:title="@string/my_offers" />
+    </group>
+    <group
+        android:id="@+id/grp10F"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_right_club"
+            android:icon="@drawable/ic_membership_card"
+            android:title="@string/club_membership" />
+    </group>
+    <group
+        android:id="@+id/grp10G"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_right_Billing"
+            android:icon="@drawable/ic_billing"
+            android:title="@string/billing" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp10H"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_feedback"
+            android:icon="@drawable/ic_ticket"
+            android:title="@string/my_queries" />
+    </group>
+    <group
+        android:id="@+id/grp10I"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_help"
+            android:icon="@drawable/ic_ticket_new"
+            android:title="@string/raise_a_new_query" />
+    </group>
+
+    <group
+        android:id="@+id/grp10j"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

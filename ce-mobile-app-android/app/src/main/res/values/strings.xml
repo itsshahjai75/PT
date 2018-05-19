@@ -1,0 +1,264 @@
+<resources>
+    <string name="app_name">Click-EAT</string>
+    <string name="pushwoosh_app_id">3E463-BFB8A</string>
+    <string name="fcm_sender_id">41981312703</string>
+    <string name="welcome">Welcome</string>
+    <string name="email_address">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="need_help">Contact Support Team</string>
+    <string name="txt_call">077 3863 6652</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email">Enter Email Address</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_postcode">Enter Postcode</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_password_again">Confirm Password </string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_register">login</string>
+    <string name="mail_error">Email cannot be Blank</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="password_error">Password cannot be blank</string>
+    <string name="wrong_email_password">Email or Password may be wrong!!!!</string>
+    <string name="check_server_connection">Please check your Server</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="lbl_loading">Loading ....</string>
+    <string name="menu_title_home">Home</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="menu_title_logout">Logout</string>
+    <string name="table_book">Book a Table</string>
+    <string name="order_away">Order Takeaway</string>
+    <string name="setting_menu_title">Settings</string>
+    <string name="menu_title_feedback">Feedback</string>
+    <string name="menu_title_help">Help</string>
+    <string name="label_postcode">Postcode</string>
+    <string name="select_date">Select Date</string>
+    <string name="label_time">Time</string>
+    <string name="number_of_people">People</string>
+    <string name="book_a_table">Book a Table</string>
+    <string name="cuisine_type">Cuisine Type</string>
+    <string name="search">Search Cuisine...</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_something_wrong">Something went wrong !!!!</string>
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Help</item>
+        <item>Feedback</item>
+        <item>Settings</item>
+        <item>Logout</item>
+        <item>Logout</item>
+        <item>Logout</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="items_time_dialog_selection">
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+    </string-array>
+    <string name="title_activity_pre_login_main">PreLoginMainActivity</string>
+    <string name="mail_sent">Mail Sent !!</string>
+    <string name="main_not_registered">Email id is not registered</string>
+    <string name="password_length">Password must be at least 3 character</string>
+    <string name="mobile_number">Mobile Number Required</string>
+    <string name="postcode_error">Postcode Required</string>
+    <string name="password_not_match">Password does not match!</string>
+    <string name="birth_date_error">Select Birth Date!</string>
+    <string name="birth_month_error">Select Birth Month!</string>
+    <string name="name_error">Name Required</string>
+    <string name="email_already_registered">Email is already registered !!!</string>
+    <string name="cuisine_title">Cuisines:</string>
+    <string name="time_title">TIME:</string>
+    <string name="people_of_table_title">PEOPLE:</string>
+    <string name="discount_title">DISCOUNT:</string>
+    <string name="sort_by_title">Sort by</string>
+    <string name="title_popularity">Popularity</string>
+    <string name="title_price_low_to_high">Price Low to High</string>
+    <string name="title_price_high_to_low">Price High to Low</string>
+    <string name="title_newest_first">Newest First</string>
+    <string name="select_all">Select All</string>
+    <string name="clear_all">Clear All</string>
+    <string name="restaurant_details_title">Restaurant</string>
+    <string name="title_cuisine_select_error">At list select one cuisine !!!</string>
+    <string name="about_restaurant">About Restaurant</string>
+    <string name="title_distance">Distance</string>
+    <string name="title_price">Price</string>
+    <string name="title_cuisine">Cuisine</string>
+    <string name="collection_or_delivery_or_both">Collection or Delivery</string>
+    <string name="customer_rating">Customer Rating</string>
+    <string name="facilities_title">Facilities</string>
+    <string name="special_diets">Special Diets</string>
+    <string name="title_offer">Offer</string>
+    <string name="hygiene_ratings">Hygiene Ratings</string>
+    <string name="title_apply">Apply</string>
+    <string name="no_restaurant_found">No Restaurant found !!!!</string>
+    <string name="distance_title">DISTANCE</string>
+
+    <string-array name="spinner_items_month">
+        <item>Birth Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="all_selected_cuisines">   All Cuisines</string>
+    <string name="pural_selected_cuisines"> cuisines</string>
+    <string name="one_cuisine">Cuisine</string>
+    <string name="title_search">We have found</string>
+    <string name="search_string_for">for</string>
+    <string name="search_string_people">people</string>
+    <string name="search_string_at">at</string>
+    <string name="seach_string_like">like</string>
+    <string name="sort_by">Sort By</string>
+    <string name="filter">Filter</string>
+    <string name="use_location">Use Location</string>
+    <string name="faqs">FAQs</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="change_password">Change Password</string>
+    <string name="settings_for_sms_amp_email"><![CDATA[Settings for SMS & Email]]></string>
+    <string name="details">Details</string>
+    <string name="address">Address</string>
+    <string name="recent_booking">My Table Bookings</string>
+    <string name="recent_takeaways">Recent Takeaways</string>
+    <string name="my_offers">My Offers</string>
+    <string name="club_membership">Club Membership</string>
+    <string name="billing">Billing</string>
+    <string name="list_my_tickets">List my tickets</string>
+    <string name="raise_a_new_ticket">Raise a new ticket</string>
+    <string name="logout">Logout</string>
+    <string name="title_Restaurants">Restaurants</string>
+    <string name="search_string_around">around</string>
+    <string name="collection">Collection:</string>
+    <string name="delivery">Delivery:</string>
+    <string name="yes_title">Yes</string>
+    <string name="no_title">No</string>
+    <string name="collection_title">Collection</string>
+    <string name="delivery_title">Delivery</string>
+    <string name="open_title">Open</string>
+    <string name="closed_title">Closed</string>
+    <string name="support">Support</string>
+    <string name="about">About</string>
+    <string name="notification_setting">Notification Setting</string>
+    <string name="raise_a_new_query">Raise a new query</string>
+    <string name="my_queries">My Queries</string>
+    <string name="alphabetically_title">Alphabetically</string>
+    <string name="distance">Distance</string>
+    <string name="mins_title">mins</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="avg_price">Avg. £ for 2 -£</string>
+    <string name="average_price_2_adults">Average Price £ (2 adults)</string>
+    <string name="quick_filters">Quick Filters</string>
+    <string name="pure_veg">Pure Veg</string>
+    <string name="open">Open</string>
+    <string name="quick_delivery">Delivery</string>
+    <string name="close">Close</string>
+    <string name="accept_the_terms_of_service_and_data_protection_policy">Accept the <font color="#337ab7">Terms of Service </font>
+        and <font color="#337ab7">Data Protection Policy</font></string>
+    <string name="book">Book</string>
+    <string name="hint_name">Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="total_person">Total Person</string>
+    <string name="booking_date">Booking Date</string>
+    <string name="home">Home</string>
+    <string name="reset">Reset</string>
+    <string name="mobile_valid">Mobile Number is not valid</string>
+    <string name="unsuffiecent_table">Not enough tables for number of people</string>
+    <string name="maps">Maps:</string>
+    <string name="no_details_found">No details found !!!</string>
+    <string name="no_dish_found">No dish found !!!</string>
+    <string-array name="spinner_review_limit">
+        <item>All</item>
+        <item>Last Week</item>
+        <item>Last Month</item>
+    </string-array>
+
+    <string-array name="spinner_review_sort">
+        <item>Sort By</item>
+    </string-array>
+
+    <string name="permission_issue">The user name or password is incorrect or you don\'t have permissions</string>
+    <string name="service_unavilable">Service Unavilable</string>
+    <string name="no_any_meals_found">No any meals found</string>
+    <string name="title_activity_account_address">AccountAddress</string>
+    <string name="work_address">Work Address</string>
+    <string name="reviews">Reviews :</string>
+    <string name="type_of_address">Type of Address</string>
+    <string name="txt_save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="notification">Notification</string>
+    <string name="my_favourites">My Favourites</string>
+    <string name="my_account">My Account</string>
+    <string name="offers">Offers</string>
+    <string name="meal_deals">Meal Deals</string>
+    <string name="club_member">Club Member</string>
+    <string name="review_text">Reviews</string>
+</resources>

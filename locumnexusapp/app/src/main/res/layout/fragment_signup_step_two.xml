@@ -1,0 +1,268 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteApp"
+    tools:context="com.nexus.locum.locumnexus.fragments.SignupStepTwo">
+
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/sw_layout"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical">
+
+        //your UI...
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.nexus.locum.locumnexus.LoginLocum">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/TIL_password"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.nexus.locum.locumnexus.customviews.UserEditText
+                        android:tag="100"
+                        android:id="@+id/et_password"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textSize="17sp"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TIL_confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.nexus.locum.locumnexus.customviews.UserEditText
+                    android:tag="100"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/et_confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textSize="17sp"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TIL_prefix"
+                android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_bottom_border"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/sp_category"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:padding="0dp"
+                    android:anyDensity="false"
+                    android:layout_marginTop="3dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TIL_catTypeNumber"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.nexus.locum.locumnexus.customviews.UserEditText
+                    android:tag="100"
+                    android:visibility="gone"
+                    android:id="@+id/et_catTypeNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Number"
+                    android:inputType="text"
+                    android:textSize="17sp"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:paddingLeft="10dp"
+                 android:orientation="horizontal">
+
+                 <RadioGroup
+                     android:id="@+id/rg_plan"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+
+                     <com.nexus.locum.locumnexus.customviews.UserTextView
+                         android:tag="100"
+                         android:id="@+id/tv_extra"
+                         android:layout_margin="2dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:text="Packages : "
+                         android:gravity="center"
+                         android:layout_gravity="center"
+                         android:textSize="17sp" />
+
+                     <RadioButton
+                         android:id="@+id/rb_enterprise"
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:checked="true"
+                         android:paddingRight="5dp"
+                         android:tag="100"
+                         android:textSize="17sp"
+                         android:text="Enterprise" />
+
+                     <RadioButton
+                         android:tag="100"
+                         android:id="@+id/rb_basic"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Basic"
+                         android:textSize="17sp"
+                         android:paddingRight="5dp"
+                         />
+                 </RadioGroup>
+
+                 <ImageView
+                     android:id="@+id/iv_planDetails"
+                     android:layout_width="0dp"
+                     android:layout_weight="0.2"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:src="@drawable/ic_eye24dp"/>
+
+             </LinearLayout>
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/rg_plantype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_rbMonthly"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/round_small_corner_priamary_filled"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_monthly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:buttonTint="@color/whiteApp"
+                        android:tag="100"
+                        android:padding="5dp"
+                        android:text="Monthly "
+                        android:textSize="17sp"/>
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:tag="100"
+                        android:id="@+id/tv_rb_monthly"
+                        android:layout_margin="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pound_currency"
+                        android:textSize="21sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rbYearly"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/rounded_corner_bordergrey"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_yearly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:buttonTint="@color/whiteApp"
+                        android:tag="100"
+                        android:padding="5dp"
+                        android:text="Yearly   "
+                        android:textSize="17sp"/>
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                         android:tag="100"
+                         android:id="@+id/tv_rb_yearly"
+                        android:layout_margin="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pound_currency"
+                        android:textSize="21sp" />
+
+
+                 </LinearLayout>
+
+             </RadioGroup>
+
+
+             <com.nexus.locum.locumnexus.customviews.UserTextView
+                 android:tag="100"
+                 android:id="@+id/tv_termscondition"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Accept terms and conditions."
+                 android:textColor="@color/colorPrimaryDark"
+                 android:drawablePadding="10dp"
+                 android:textSize="17sp"
+                 android:layout_margin="10dp"/>
+
+
+
+         </LinearLayout>
+
+     </ScrollView>
+ </FrameLayout>

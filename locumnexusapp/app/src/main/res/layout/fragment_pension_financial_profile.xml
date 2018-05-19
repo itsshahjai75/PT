@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.47"
+                android:layout_height="wrap_content">
+
+                <com.nexus.locum.locumnexus.customviews.UserEditText
+                    android:tag="100"
+                    android:id="@+id/et_dob"
+                    android:padding="10dp"
+                    android:hint="@string/dateofbirth"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+
+                </com.nexus.locum.locumnexus.customviews.UserEditText>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Space android:layout_width="0dp"
+                android:layout_weight="0.05"
+                android:layout_height="wrap_content"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.47"
+                android:layout_height="wrap_content">
+
+
+                <com.nexus.locum.locumnexus.customviews.UserEditText
+                    android:tag="100"
+                    android:id="@+id/et_nhsoscode"
+                    android:hint="@string/nhsps_ea_code"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+                </com.nexus.locum.locumnexus.customviews.UserEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.47"
+                    android:layout_height="wrap_content">
+
+
+                    <com.nexus.locum.locumnexus.customviews.UserEditText
+                        android:tag="100"
+                        android:id="@+id/et_areateam"
+                        android:hint="@string/area_team_lhb"
+                        android:maxLength="12"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+
+                    </com.nexus.locum.locumnexus.customviews.UserEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Space android:layout_width="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.47"
+                    android:layout_height="wrap_content">
+
+
+                    <com.nexus.locum.locumnexus.customviews.UserEditText
+                        android:tag="100"
+                        android:imeOptions="actionDone"
+                        android:id="@+id/et_hostlhbNo"
+                        android:hint="@string/host_lhb_ref_no"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                    </com.nexus.locum.locumnexus.customviews.UserEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_pensionrate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="40dp"
+                android:nestedScrollingEnabled="true"
+                android:background="@drawable/rounded_corner_bordergrey"
+                android:divider="@color/whiteApp"
+                android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:textColor="@color/whiteApp"
+                android:background="@color/colorPrimary"
+                android:text="@string/save"
+                android:textAllCaps="true"
+                android:textSize="21sp"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

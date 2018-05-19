@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#50ffffff"
+    android:orientation="vertical"
+    tools:context="com.nexus.locum.locumnexus.fragments.MainPersonalProfile">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:id="@+id/tvRateType"
+                android:tag="200"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="RATE TYPE"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:id="@+id/tvRate"
+                android:tag="200"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="RATE"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:id="@+id/tvaction"
+                android:tag="200"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Action"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/md_grey_300"
+            android:layout_marginTop="2dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_addRate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:divider="@color/whiteApp"
+            android:scrollbars="vertical"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add_Rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            app:fabSize="normal"
+            android:src="@drawable/ic_plus_white"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_size="normal"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label=""
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

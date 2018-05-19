@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Click-Eat</string>
+    <string name="welcome">स्वागत हे</string>
+    <string name="email_address">ईमेल पता</string>
+    <string name="password">पासवर्ड</string>
+    <string name="remember_me">मुझे याद रखना</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="need_help">मदद चाहिए? हमारे समर्थन टीम 24/7 को कॉल करें</string>
+    <string name="txt_call">077 3863 6652</string>
+    <string name="enter_name">नाम दर्ज</string>
+    <string name="enter_email">ईमेल पता दर्ज</string>
+    <string name="enter_mobile_number">मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_postcode">पोस्टकोड दर्ज करें</string>
+    <string name="enter_your_password">अपना पासवर्ड डालें</string>
+    <string name="enter_password_again">पासवर्ड फिर से दर्ज करें</string>
+    <string name="already_have_an_account">क्या आपके पास पहले से एक खाता मौजूद है?</string>
+    <string name="login_register">लॉग इन करें</string>
+    <string name="mail_error">ईमेल खाली नहीं हो सकता</string>
+    <string name="invalid_email">अवैध ईमेल</string>
+    <string name="password_error">पासवर्ड रिक्त नहीं हो सकता</string>
+    <string name="wrong_email_password">ईमेल या पासवर्ड गलत हो सकता है !!!!</string>
+    <string name="check_server_connection">कृपया अपने सर्वर की जांच करें</string>
+    <string name="reset_password">पासवर्ड रीसेट</string>
+    <string name="enter_email_id">ईमेल आईडी दर्ज करें</string>
+    <string name="lbl_loading">लोड हो रहा है ....</string>
+    <string name="menu_title_home">घर</string>
+    <string name="drawer_open">ड्रॉवर ओपन</string>
+    <string name="drawer_close">दराज बंद करें</string>
+    <string name="menu_title_logout">लोग आउट</string>
+    <string name="table_book">एक मेज सुरक्षित करें</string>
+    <string name="order_away">ऑर्डर टेकअवे</string>
+    <string name="setting_menu_title">सेटिंग्स</string>
+    <string name="menu_title_feedback">प्रतिक्रिया</string>
+    <string name="menu_title_help">मदद</string>
+    <string name="label_postcode">पोस्टकोड</string>
+    <string name="select_date">तारीख़ चुनें</string>
+    <string name="label_time">पहर</string>
+    <string name="number_of_people">लोग</string>
+    <string name="book_a_table">एक मेज सुरक्षित करें</string>
+    <string name="cuisine_type">भोजन प्रकार</string>
+    <string name="search">भोजन खोजें ...</string>
+    <string name="title_activity_main">मुख्य गतिविधि</string>
+    <string name="navigation_drawer_open">नेविगेशन ड्रॉवर खोलें</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉवर को बंद करें</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="ok">ठीक</string>
+    <string name="cancel">रद्द करन"</string>
+    <string name="title_something_wrong">कुछ गलत हो गया !!!!</string>
+    <string name="title_activity_pre_login_main">प्रीओलॉगिन मुख्य गतिविधि</string>
+    <string name="mail_sent">संदेश भेज दिया गया !</string>
+    <string name="main_not_registered">ईमेल आईडी पंजीकृत नहीं है</string>
+    <string name="password_length">पासवर्ड कम से कम 3 वर्ण होना चाहिए</string>
+    <string name="mobile_number">मोबाइल नंबर रिक्त नहीं हो सकता</string>
+    <string name="postcode_error">पोस्टकोड रिक्त नहीं हो सकता</string>
+    <string name="password_not_match">पासवर्ड मैच नहीं कर रहा है!</string>
+    <string name="birth_date_error">जन्म तिथि का चयन करें</string>
+    <string name="birth_month_error">जन्म का महीना चुनें!</string>
+    <string name="name_error">नाम रिक्त नहीं हो सकता!</string>
+    <string name="email_already_registered">ईमेल पहले से पंजीकृत है !!</string>
+    <string name="cuisine_title">व्यंजनों:</string>
+    <string name="time_title">पहर:</string>
+    <string name="people_of_table_title">लोग:</string>
+    <string name="discount_title">छूट:</string>
+    <string name="sort_by_title">इसके अनुसार क्रमबद्ध करें</string>
+    <string name="title_popularity">लोकप्रियता</string>
+    <string name="title_price_low_to_high">कीमतों का उतार - चढ़ाव</string>
+    <string name="title_price_high_to_low">मूल्य कम करने के लिए उच्च</string>
+    <string name="title_newest_first">नवीनतम पहले</string>
+    <string name="select_all">सभी का चयन करे</string>
+    <string name="clear_all">सभी साफ करें</string>
+    <string name="restaurant_details_title">खाने की दुकान</string>
+    <string name="title_cuisine_select_error">सूची में एक व्यंजन का चयन करें !!!</string>
+    <string name="about_restaurant">रेस्तरां के बारे में</string>
+    <string name="title_distance">दूरी</string>
+    <string name="title_price">मूल्य</string>
+    <string name="title_cuisine">भोजन</string>
+    <string name="collection_or_delivery_or_both">संग्रह या डिलिवरी</string>
+    <string name="customer_rating">ग्राहक रेटिंग</string>
+    <string name="facilities_title">सुविधाएं</string>
+    <string name="special_diets">विशेष आहार</string>
+    <string name="title_offer">प्रस्ताव</string>
+    <string name="hygiene_ratings">स्वच्छता रेटिंग</string>
+    <string name="title_apply">लागू करें</string>
+    <string name="no_restaurant_found">कोई रेस्तरां नहीं मिला !!!!</string>
+    <string name="distance_title">दूरी</string>
+    <string name="title_activity_maps">नक्शा</string>
+    <string name="all_selected_cuisines">सभी व्यंजनों</string>
+    <string name="pural_selected_cuisines">व्यंजनों</string>
+    <string name="one_cuisine">भोजन</string>
+    <string name="title_search">आप रेस्तरां में देख रहे हैं</string>
+    <string name="search_string_for">के लिये</string>
+    <string name="search_string_people">पर लोग</string>
+    <string name="search_string_at">पर</string>
+    <string name="seach_string_like">पसंद</string>
+    <string name="sort_by">इसके अनुसार क्रमबद्ध करें</string>
+    <string name="filter">फ़िल्टर</string>
+    <string name="use_location">स्थान का उपयोग करें</string>
+    <string name="faqs">पूछे जाने वाले प्रश्न</string>
+    <string name="contact_us">हमसे संपर्क करें</string>
+    <string name="about_us">हमारे बारे में</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="settings_for_sms_amp_email">एसएमएस और ईमेल के लिए सेटिंग्स</string>
+    <string name="details">विवरण</string>
+    <string name="address">पता</string>
+    <string name="recent_booking">हाल की टेबल बुकिंग</string>
+    <string name="recent_takeaways">हाल के अधिभार</string>
+    <string name="my_offers">मेरा ऑफ़र</string>
+    <string name="club_membership">क्लब की सदस्यता</string>
+    <string name="billing">बिलिंग</string>
+    <string name="list_my_tickets">मेरे टिकट की सूची दें</string>
+    <string name="raise_a_new_ticket">एक नया टिकट बढ़ाएं</string>
+    <string name="logout">लोग आउट</string>
+    <string name="open_title">खुला</string>
+    <string name="closed_title">बन्द है</string>
+
+    <string-array name="spinner_items_month">
+        <item>महीना चुनिए</item>
+        <item>जनवरी</item>
+        <item>फरवरी</item>
+        <item>मार्च</item>
+        <item>अप्रैल</item>
+        <item>मई</item>
+        <item>जून</item>
+        <item>जुलाई</item>
+        <item>अगस्त</item>
+        <item>सितंबर</item>
+        <item>अक्टूबर</item>
+        <item>नवंबर</item>
+        <item>दिसंबर</item>
+    </string-array>
+
+    <string-array name="nav_item_activity_titles">
+        <item>होम</item>
+        <item>मदद</item>
+        <item>प्रतिक्रिया</item>
+        <item>सेटिंग्स</item>
+        <item>लोग आउट</item>
+        <item>लोग आउट</item>
+        <item>लोग आउट</item>
+        <item>लोग आउट</item>
+    </string-array>
+
+    <string-array name="items_time_dialog_selection">
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+    </string-array>
+    <string name="title_Restaurants">रेस्टोरेंट</string>
+    <string name="search_string_around">चारों ओर</string>
+    <string name="collection">संग्रह:</string>
+    <string name="delivery">वितरण:</string>
+    <string name="yes_title">हाँ</string>
+    <string name="no_title">नहीं</string>
+    <string name="collection_title">संग्रह</string>
+    <string name="delivery_title">वितरण</string>
+    <string name="support">समर्थन</string>
+    <string name="about">के बारे में</string>
+    <string name="notification_setting">अधिसूचना सेटिंग</string>
+    <string name="raise_a_new_query">एक नई क्वेरी बढ़ाएं</string>
+    <string name="my_queries">मेरे प्रश्न</string>
+    <string name="my_account">मेरा खाता</string>
+    <string name="alphabetically_title">वर्णक्रम</string>
+    <string name="distance">दूरी</string>
+    <string name="mins_title">मिनट</string>
+    <string name="welcome_title">स्वागत हे</string>
+    <string name="avg_price">औसत। मूल्य</string>
+    <string name="average_price_2_adults">औसत मूल्य (2 वयस्क)</string>
+    <string name="quick_filters">त्वरित फ़िल्टर</string>
+    <string name="pure_veg">शुद्ध शाकाहारी</string>
+    <string name="open">खुला</string>
+    <string name="quick_delivery">वितरण</string>
+    <string name="close">बंद करें</string>
+    <string name="accept_the_terms_of_service_and_data_protection_policy">स्वीकारें
+        <font color="#337ab7"> सेवा की शर्तें </font>
+        और <font color="#337ab7"> डेटा सुरक्षा नीति</font></string>
+    <string name="book">बुक करें</string>
+    <string name="hint_name">नाम</string>
+    <string name="mobile_no">मोबाइल नंबर</string>
+    <string name="total_person">कुल व्यक्ति</string>
+    <string name="booking_date">बुक करने की तिथि</string>
+    <string name="home">होम</string>
+    <string name="mobile_valid">मोबाइल नंबर मान्य नहीं है</string>
+    <string name="reset">रीसेट</string>
+
+    <string-array name="spinner_review_limit">
+        <item>last week</item>
+        <item>last month</item>
+        <item>last year</item>
+    </string-array>
+
+    <string-array name="spinner_review_sort">
+        <item>Sort By..</item>
+    </string-array>
+</resources>

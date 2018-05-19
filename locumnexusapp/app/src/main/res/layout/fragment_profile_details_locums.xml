@@ -1,0 +1,259 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteApp"
+    tools:context="com.nexus.locum.locumnexus.fragments.hometabs.ProfilelDetailsLocums">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_personal"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:tag="image_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_personal"
+                    android:layout_weight="0.5"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tvPersonalProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center"
+                        android:gravity="left|center"
+                        android:tag="200"
+                        android:textSize="21sp"
+                        android:drawablePadding="10dp"
+                        android:text="Personal" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgNextpers"
+                    android:tag="image_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_next"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_professional"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:tag="image_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_professional"
+                    android:layout_weight="0.5"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tv_professional"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center"
+                        android:gravity="left|center"
+                        android:tag="200"
+                        android:textSize="21sp"
+                        android:drawablePadding="10dp"
+                        android:text="Professional" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgNextpro"
+                    android:tag="image_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_next"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_finance"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:tag="image_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_finance"
+                    android:layout_weight="0.5"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tv_finance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center"
+                        android:tag="200"
+                        android:text="Financial"
+                        android:textSize="21sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgNextfinance"
+                    android:tag="image_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_next"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_preference"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:tag="image_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_preferences"
+                    android:layout_weight="0.5"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tv_preference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center"
+                        android:drawablePadding="10dp"
+                        android:gravity="left|center"
+                        android:tag="200"
+                        android:text="Preference"
+                        android:textSize="21sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgNextPrefrences"
+                    android:tag="image_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_next"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+</FrameLayout>

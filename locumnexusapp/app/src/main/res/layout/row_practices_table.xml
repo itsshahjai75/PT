@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:contentPadding="10dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tvPracticesName"
+                        android:tag="200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Wockhardt Pharma"
+                        android:textColor="@color/md_grey_700"
+                        android:textSize="15sp" />
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tvPracticesCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:tag="100"
+                        android:text="15963247"
+                        android:textColor="@color/md_grey_700"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_preferedMore"
+                    android:tag="100"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:drawableRight="@drawable/ic_more_vert_grey_24dp"
+                    android:text=""
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:tag="200"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Info"
+                android:textColor="@color/md_grey_700"
+                android:textSize="12sp" />
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:id="@+id/tv_contactName"
+                android:tag="100"
+                android:drawableLeft="@drawable/ic_doctor_practice"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Albert"
+                android:textColor="@color/md_grey_700"
+                android:textSize="12sp" />
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:id="@+id/tvcontactEmail"
+                android:tag="100"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="johnalbert@locumnexus.com"
+                android:textColor="@color/md_grey_700"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/ic_email_outline"
+                android:drawablePadding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_contactNumber"
+                    android:tag="100"
+                    android:layout_gravity="top"
+                    android:gravity="left|center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="+44 741596357"
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="10dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical">
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:tag="200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="NHSPS EA Code"
+                        android:textColor="@color/md_grey_700"
+                        android:textSize="10sp" />
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tvNHSPSEACode"
+                        android:tag="100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="#123546789"
+                        android:textColor="@color/md_grey_700"
+                        android:textSize="12sp"
+                        android:drawableLeft="@drawable/ic_barcode"
+                        android:drawablePadding="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_grey_300"
+                android:layout_margin="5dp"/>
+
+
+            <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                android:id="@+id/switch_prefer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                custom:activeBgColor="#004670"
+                custom:activeTextColor="@android:color/white"
+                custom:inactiveBgColor="#D5E0E7"
+                custom:inactiveTextColor="@android:color/black"
+                custom:separatorColor="@color/gray_very_light"
+                custom:textToggleLeft="Prefer"
+                custom:textToggleRight="Block"
+                custom:cornerRadius="20dp"
+                custom:toggleWidth="40dp"/>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtAddressType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/work_address"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/txtAddressCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/check_box_selector_address"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnAddressDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_address_button_default"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@drawable/text_color_button"/>
+
+            <Button
+                android:id="@+id/btnAddressEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_address_button_default"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@drawable/text_color_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAddressDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_address_text"
+        android:padding="5dp"
+        android:textColor="#333" />
+</LinearLayout>

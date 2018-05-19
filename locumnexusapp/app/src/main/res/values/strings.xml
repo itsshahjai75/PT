@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Locums Nexus</string>
+    <string name="title_activity_signup_locum">SignupLocum</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Cat1</item>
+        <item>Cat2</item>
+        <item>Cat3</item>
+    </string-array>
+
+    <string name="pound_currency">\u00a3</string>
+    <string name="title_activity_home_dashboard_locum">HomeDashboardLocum</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="dateofbirth">Date of Birth</string>
+    <string name="nhsps_ea_code">NHSPS EA Code</string>
+    <string name="area_team_lhb">Area Team / LHB</string>
+    <string name="host_lhb_ref_no">Host LHB Ref No</string>
+
+    <string name="Financial_Years">Financial Years</string>
+    <string name="Start_Date">Start Date</string>
+    <string name="End_Date">End Date</string>
+    <string name="Tax_returns">Tax returns of Current Year</string>
+    <string name="Tax_Submitted_Dat">Tax Submitted Date</string>
+    <string name="Tax_Submission_By">Tax Submission By</string>
+
+    <string name="save">save</string>
+    <string name="status">status</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

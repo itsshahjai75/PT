@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:contentPadding="10dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:tag="100"
+                        android:text="Practice Name"
+                        android:textColor="@color/md_grey_700"
+                        android:textSize="12sp" />
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tvPracticesName"
+                        android:tag="200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Wockhardt Pharma"
+                        android:textColor="@color/md_grey_700"
+                        android:textSize="15sp" />
+
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:tag="100"
+                        android:text="Practice Code"
+                        android:textColor="@color/md_grey_700"
+                        android:textSize="12sp" />
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tvPracticesCode"
+                        android:tag="200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="A0071000"
+                        android:textColor="@color/md_grey_700"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_prefere"
+                    android:tag="100"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="+ Prefer"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/rounded_corner_primary_borde"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

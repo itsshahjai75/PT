@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/base_popup_layout"
+    tools:context="com.clickeat.customer.click_eatcustomer.BookTableInfo.ImageFullscreenView">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fullScreenPager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btnClose"
+        android:layout_weight="0.9"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_bg"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="Close"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

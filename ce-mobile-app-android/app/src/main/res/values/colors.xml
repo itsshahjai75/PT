@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4823</color>
+    <color name="colorPrimaryDark">#fc9016</color>
+    <color name="colorAccent">#fd7c3b</color>
+    <color name="colorIndicator">#303030</color>
+
+    <color name="colorWhite">#ffff</color>
+    <color name="colorBG">#f1f3f6</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorBrown">#C16165</color>
+    <color name="colorGreen">#3c763d</color>
+    <color name="marsala_wine">#6D002B</color>
+    <color name="bg_table_1">#F5F5F5</color>
+    <color name="bg_table_2">#FAFAFA</color>
+    <color name="colorListBg">#E0E0E0</color>
+</resources>

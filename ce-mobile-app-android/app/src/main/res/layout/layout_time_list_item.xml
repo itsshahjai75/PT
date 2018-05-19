@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="7dp"
+    android:padding="7dp"
+    android:gravity="center"
+    android:weightSum="1">
+    <TextView
+        android:layout_marginLeft="7dp"
+        android:id="@+id/txtDayName"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlack"
+        android:text="Mon"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:text="-"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDayTime"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginRight="7dp"
+        android:text="10:00AM - 22:00PM"/>
+</LinearLayout>

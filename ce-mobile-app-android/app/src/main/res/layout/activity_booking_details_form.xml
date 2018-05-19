@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.clickeat.customer.click_eatcustomer.BookTableInfo.BookingDetailsForm">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="7dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:text="Book A Table: "
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Restaurant Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+
+        <ImageButton
+            android:id="@+id/btnBookClose"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_weight="0.1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutHeader"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/booking_date"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <EditText
+                android:id="@+id/input_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="end|center"
+                android:hint="@string/total_person"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.inqbarna.tablefixheaders.TableFixHeaders
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scroll"
+        android:layout_margin="7dp"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBookDone"
+        android:layout_margin="7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/button_booked" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="Selected"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/book_btn_style" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="Available"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/booked_table_style" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="Booked"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/book_not_btn_style" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="Unavailable"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBookDone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="7dp"
+        android:background="@drawable/button_bg"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+</RelativeLayout>

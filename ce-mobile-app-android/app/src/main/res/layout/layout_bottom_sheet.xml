@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet1"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:clipToPadding="true"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:overScrollMode="never">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Sort By"
+            android:textColor="#333"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+
+        <!-- <android.support.v7.widget.RecyclerView
+             android:id="@+id/rvBottom"
+             android:layout_width="match_parent"
+             android:layout_height="260dp"/>-->
+
+        <ListView
+            android:id="@+id/lstViewSheet"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:listSelector="@drawable/selector_list"/>
+
+        <Button
+            android:id="@+id/btnBottomCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

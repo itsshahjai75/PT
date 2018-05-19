@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.brandongogetap:stickyheaders-0.4.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stickyheaders-0.4.4.aar/61fb7b6c901dde7ad013c9e30b0498c1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stickyheaders-0.4.4.aar/61fb7b6c901dde7ad013c9e30b0498c1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.brandongogetap/stickyheaders/0.4.4/271aea9675034d6bef49e77b22dcb7fcef362146/stickyheaders-0.4.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

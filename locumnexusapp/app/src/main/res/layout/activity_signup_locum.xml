@@ -1,0 +1,163 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteApp"
+    android:orientation="vertical">
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/sw_layout"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical">
+        //your UI...
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".SignupLocum">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_info"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/logo"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_stepssignup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/step_one">
+                <!-- display two Button's and a FrameLayout to replace the Fragment's  -->
+                <Button
+                    android:id="@+id/firstFragment"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="First Fragment"
+                    android:visibility="gone"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/secondFragment"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Second Fragment"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:textColor="@color/whiteApp"
+            android:background="@color/colorPrimary"
+            android:text="Next"
+            android:textSize="17sp"
+            android:padding="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <com.nexus.locum.locumnexus.customviews.UserTextView
+            android:tag="100"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tv_alreadyaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:text="Already have an account?" />
+
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#909090"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="2dp"
+            android:orientation="horizontal" >
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:tag="100"
+                android:id="@+id/tv_emailID"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:gravity="left|center"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_email_outline"
+                android:drawablePadding="5dp"
+                android:text="contactus@locumsnexus.com" />
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:tag="100"
+                android:id="@+id/tv_callnumber"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right|center"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_call_24dp"
+                android:paddingStart="5dp"
+                android:text="+44(0)7876 523887" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

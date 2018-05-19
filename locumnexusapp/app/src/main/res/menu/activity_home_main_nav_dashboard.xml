@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_left"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_booking_left"
+            android:icon="@drawable/ic_calander"
+            android:title="Bookings" />
+        <item
+            android:id="@+id/nav_diary_left"
+            android:icon="@drawable/ic_diary"
+            android:title="Diary" />
+        <item
+            android:id="@+id/nav_timesheet_left"
+            android:icon="@drawable/ic_timesheet"
+            android:title="Timesheet" />
+        <item
+            android:id="@+id/nav_finanace_left"
+            android:icon="@drawable/ic_finance"
+            android:title="Finance" />
+        <item
+            android:id="@+id/nav_property_left"
+            android:icon="@drawable/ic_property"
+            android:title="Property" />
+
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out" />
+
+</menu>

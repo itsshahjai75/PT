@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.clickeat.customer.click_eatcustomer.MainHome.CuisineList">
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnSelectAllCuisine"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="35dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:background="@drawable/book_table_btn_style"
+            android:text="@string/select_all" />
+
+        <Button
+            android:id="@+id/btnUnSelectAllCuisine"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="35dp"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/book_table_btn_style"
+            android:text="@string/clear_all" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/buttonLayout"
+        android:id="@+id/listCuisineType"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:choiceMode="multipleChoice"
+        android:layout_above="@+id/btnCuisineCancel" />
+
+    <Button
+        android:id="@+id/btnCuisineCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnCuisineOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/listCuisineType"
+        android:layout_alignRight="@+id/listCuisineType"
+        android:layout_alignBaseline="@+id/btnCuisineCancel"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:text="@string/ok" />
+
+</RelativeLayout>
+

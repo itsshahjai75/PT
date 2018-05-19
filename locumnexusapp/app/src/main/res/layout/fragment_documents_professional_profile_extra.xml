@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nexus.locum.locumnexus.fragments.DocumentsProfessionalProfile">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_upload_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:tag="200"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawableTop="@drawable/ic_upload"
+                    android:background="@drawable/doted_rounded_backround"
+                    android:text="Browse your file."
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="17sp" />
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:tag="200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Registration Certificate"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_upload_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:tag="200"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawableTop="@drawable/ic_upload"
+                    android:background="@drawable/doted_rounded_backround"
+                    android:text="Browse your file."
+                    android:textColor="@color/md_grey_700"
+                    android:textSize="17sp" />
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:tag="200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Latest Resume / CV"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <com.nexus.locum.locumnexus.customviews.UserTextView
+        android:id="@+id/tv_prefere"
+        android:tag="200"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_gravity="center"
+        android:text="Please Note"
+        android:textSize="17sp"
+        android:textColor="@color/black"/>
+
+    <com.nexus.locum.locumnexus.customviews.UserTextView
+        android:tag="100"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_gravity="center"
+        android:text="Accept Type"
+        android:textSize="12sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <com.nexus.locum.locumnexus.customviews.UserTextView
+            android:tag="100"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="DOC / DOCX"
+            android:textColor="@color/md_green_700"
+            android:background="@drawable/round_corner_green"
+            android:textSize="10sp"/>
+
+        <com.nexus.locum.locumnexus.customviews.UserTextView
+            android:tag="100"
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="JPEG"
+            android:textColor="@color/md_blue_700"
+            android:background="@drawable/round_corner_skyblue"
+            android:textSize="10sp"/>
+
+        <com.nexus.locum.locumnexus.customviews.UserTextView
+            android:tag="100"
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="PDF"
+            android:textColor="@color/md_red_700"
+            android:background="@drawable/round_corner_red"
+            android:textSize="10sp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.nexus.locum.locumnexus.customviews.UserTextView
+        android:tag="100"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="File Size Max"
+        android:textSize="12sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <com.nexus.locum.locumnexus.customviews.UserTextView
+            android:tag="100"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="2 MB"
+            android:textColor="@color/md_green_700"
+            android:background="@drawable/round_corner_yellow"
+            android:textSize="10sp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

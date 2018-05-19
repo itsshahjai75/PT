@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".MyAccounts.SecurityForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnPersonalEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_address_button_default"
+                android:drawableRight="@drawable/ic_edit"
+                android:text="@string/edit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtSecurityNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/bg_address_text"
+            android:hint="@string/new_password"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edtSecurityConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/bg_address_text"
+            android:hint="@string/confirm_password"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+
+
+        <Button
+            android:id="@+id/btnSecuritySave"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/book_btn_style"
+            android:text="@string/txt_save"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clickeat.customer.click_eatcustomer">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/login"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".Signup"
+            android:label="@string/sign_up"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".MainHome.Dashboard"
+            android:label="Click - Eat" />
+        <activity
+            android:name=".MainHome.CuisineList"
+            android:label="Cuisine Type"
+            android:theme="@style/MyAppCompatDialogTheme" />
+        <activity
+            android:name=".PreLoginMainActivity"
+            android:label="@string/title_activity_pre_login_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookTableInfo.RestaurantDetails"
+            android:label="@string/restaurant_details_title" />
+        <activity
+            android:name=".BookTableInfo.FilterDetails"
+            android:theme="@style/MyAppCompatDialogTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!--
+            <activity
+            android:name=".BookTableInfo.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        -->
+        <activity
+            android:name=".BookTableInfo.HygieneRatingWeb"
+            android:theme="@style/MyAppCompatDialogTheme" />
+        <activity android:name=".BookTableInfo.FilterTest" />
+        <activity
+            android:name=".LoginAsDialog"
+            android:label="@string/login"
+            android:theme="@style/MyAppCompatDialogTheme" />
+        <activity
+            android:name=".BookTableInfo.MenuListActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".BookTableInfo.BookATable"
+            android:theme="@style/MyAppCompatDialogTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".BookTableInfo.BookingDetailsForm"
+            android:label="Booking Details"
+            android:theme="@style/MyAppCompatDialogTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".BookTableInfo.ImageFullscreenView"
+            android:theme="@style/LoginTheme" />
+
+        <meta-data
+            android:name="com.pushwoosh.appid"
+            android:value="@string/pushwoosh_app_id" />
+        <meta-data
+            android:name="com.pushwoosh.senderid"
+            android:value="@string/fcm_sender_id" />
+
+        <service android:name=".FirebaseInfo.MyNotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@android:color/transparent" />
+
+        <activity
+            android:name=".BookTableInfo.TableMaps"
+            android:theme="@style/MyAppCompatDialogTheme" />
+        <activity android:name=".BookTableInfo.SyncGoogleBooking" />
+        <activity
+            android:name=".MyAccounts.PersonalAddressList"
+            android:label="@string/title_activity_account_address"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyAccounts.AddressForm" />
+        <activity android:name=".MyAccounts.PersonalForm" />
+        <activity android:name=".MyAccounts.SecurityForm" />
+        <activity android:name=".MyAccounts.PreferncesForm"></activity>
+    </application>
+
+</manifest>

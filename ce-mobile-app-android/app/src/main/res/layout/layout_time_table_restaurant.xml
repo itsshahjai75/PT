@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:padding="7dp"
+        android:gravity="center"
+        android:text="Opening Times"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLabel"
+
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listTimes"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:divider="#dce2ea"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/timeOk"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/timeOk"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layoutTimes"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/timeCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layoutTimes"
+        android:background="@null"
+        android:gravity="right"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone" />
+
+</RelativeLayout>

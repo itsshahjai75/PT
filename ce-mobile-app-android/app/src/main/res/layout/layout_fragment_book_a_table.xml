@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bookatable_bg_new" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/edtRestaurantAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/ediitext_style"
+                    android:drawableRight="@drawable/ic_map"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/label_postcode"
+                    android:focusable="false"
+                    android:textColor="@color/colorBlack"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/txtCuisine"
+                        style="@style/spinner_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:hint="Cuisine Type"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.5">
+
+                        <EditText
+                            android:id="@+id/edtTotalPeople"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/ediitext_style"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/ic_pepole"
+                            android:focusable="false"
+                            android:fontFamily="sans-serif"
+                            android:hint="@string/number_of_people"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edtBookingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/ediitext_style"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/select_date"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/edtBookingTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/ediitext_style"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_time"
+                    android:focusable="false"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/label_time"
+                    android:textSize="14dp" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutBookTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/book_table_btn_style"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnBookATable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_action_order_take_away"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="@string/book_a_table"
+                        android:textAllCaps="false"
+                        android:clickable="false"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

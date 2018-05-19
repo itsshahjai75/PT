@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorBG"
+    android:orientation="vertical">
+
+    <!--<com.clickeat.customer.click_eatcustomer.BookTableInfo.ContentViewFlipper-->
+    <!--android:id="@+id/viewfillper"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:divider="@android:color/black"
+        android:dividerHeight="0.5px"
+        android:elevation="7dp"
+        android:outlineProvider="bounds"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/layoutFront"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layoutLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_details_icon"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/textLogoNot"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu_list_style"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="30dp"
+                        android:typeface="sans"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_details_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:scrollHorizontally="true"
+                                android:text="Mcdonalds"
+                                android:textColor="#333333"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.25"
+                                    android:fontFamily="sans-serif"
+                                    android:text="@string/cuisine_title"
+                                    android:textSize="11dp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/txt_details_cuisine_type"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.75"
+                                    android:ellipsize="end"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="1"
+                                    android:scrollHorizontally="true"
+                                    android:text="Chili cheese fry burger"
+                                    android:textColor="#333333"
+                                    android:textSize="11dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_weight="0.5"
+                            android:gravity="end">
+
+                            <ImageView
+                                android:id="@+id/imb_btn_like"
+                                android:layout_width="18dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="end"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/button_round_shape"
+                                android:src="@drawable/ic_favourite"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imb_btn_chat"
+                                android:layout_width="18dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="end"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/button_round_shape"
+                                android:src="@drawable/ic_chat"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imb_btn_membership"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="end"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/button_round_shape"
+                                android:src="@drawable/ic_membershipcard"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imb_btn_flip"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="end"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/button_round_shape"
+                                android:src="@drawable/ic_flip" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_details_isRestaurantStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Open"
+                            android:textColor="@color/colorGreen"
+                            android:textSize="11dp" />
+
+                        <TextView
+                            android:id="@+id/txt_details_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:text="9am to  7pm"
+                            android:textSize="11dp"
+                            android:visibility="gone" />
+
+                        <!-- <TextView
+                             android:id="@+id/img_btn_calendarInfo"
+                             android:layout_width="20dp"
+                             android:layout_height="20dp"
+                             android:layout_marginLeft="5dp"
+                             android:text="@string/fa_calendar"
+                             android:textColor="@color/colorBlack"
+                             android:textSize="9dp" />-->
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/img_btn_calendarInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="{fa-calendar}"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:text="@string/avg_price"
+                            android:textColor="@color/colorGreen"
+                            android:textSize="11dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/txt_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="center"
+                            android:text="123"
+                            android:visibility="gone"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="11dp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_chat"
+                            android:visibility="gone"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="12"
+                            android:visibility="gone"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="11dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/layoutMap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.joanzapata.iconify.widget.IconTextView
+                                android:id="@+id/img_btn_mapNavigation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="{fa-map-marker}"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_details_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp"
+                                android:paddingRight="5dp"
+                                android:text="20.00 Miles"
+                                android:textSize="11dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_details_title_details"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:text="This small quickserve restaurant is big on the chili &amp; little on the patties."
+                            android:textSize="10dp"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:background="#d6d6d6" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutCollection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.joanzapata.iconify.widget.IconTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="{fa-shopping-bag}"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/collection"
+                                android:textSize="11dp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/txt_details_collection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Yes"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="#d6d6d6" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutDelivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- <com.joanzapata.iconify.widget.IconTextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="{fa-motorcycle}"
+                                 android:textColor="@color/colorPrimary"
+                                 android:textSize="15dp" />-->
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:src="@drawable/ic_scooter" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/delivery"
+                                android:textSize="11dp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/txt_details_delivery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Yes"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--   <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:orientation="horizontal">
+
+                   <LinearLayout
+                       android:id="@+id/layoutMap"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <com.joanzapata.iconify.widget.IconTextView
+                           android:id="@+id/img_btn_mapNavigation"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="{fa-map-marker}"
+                           android:textColor="@color/colorPrimary"
+                           android:textSize="14dp" />
+
+                       <TextView
+                           android:id="@+id/txt_details_distance"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:padding="2dp"
+                           android:paddingRight="5dp"
+                           android:text="20.00 Miles"
+                           android:textSize="11dp" />
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:id="@+id/txt_details_title_details"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.9"
+                       android:ellipsize="end"
+                       android:fontFamily="sans-serif"
+                       android:maxLines="1"
+                       android:scrollHorizontally="true"
+                       android:text="This small quickserve restaurant is big on the chili &amp; little on the patties."
+                       android:textSize="10dp"
+                       android:visibility="gone" />
+
+                   <View
+                       android:layout_width="1dp"
+                       android:layout_height="match_parent"
+                       android:layout_margin="3dp"
+                       android:background="#d6d6d6" />
+
+                   <LinearLayout
+                       android:id="@+id/layoutCollection"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <com.joanzapata.iconify.widget.IconTextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="{fa-shopping-bag}"
+                           android:textColor="@color/colorPrimary"
+                           android:textSize="14dp" />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="sans-serif"
+                           android:text="@string/collection"
+                           android:visibility="gone"
+                           android:layout_marginLeft="2dp"
+                           android:textSize="11dp" />
+
+                       <TextView
+                           android:id="@+id/txt_details_collection"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="sans-serif"
+                           android:text="Yes"
+                           android:textColor="@color/colorPrimary"
+                           android:textSize="11dp" />
+
+                   </LinearLayout>
+
+                   <View
+                       android:layout_width="1dp"
+                       android:layout_height="match_parent"
+                       android:layout_margin="3dp"
+                       android:background="#d6d6d6" />
+
+                   <LinearLayout
+                       android:id="@+id/layoutDelivery"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <com.joanzapata.iconify.widget.IconTextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="{fa-motorcycle}"
+                           android:textColor="@color/colorPrimary"
+                           android:textSize="14dp" />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="sans-serif"
+                           android:text="@string/delivery"
+                           android:visibility="gone"
+                           android:layout_marginLeft="2dp"
+                           android:textSize="11dp" />
+
+                       <TextView
+                           android:id="@+id/txt_details_delivery"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="sans-serif"
+                           android:text="Yes"
+                           android:textColor="@color/colorPrimary"
+                           android:textSize="11dp" />
+                   </LinearLayout>
+                   &lt;!&ndash;android:background="#00B559"&ndash;&gt;
+                   &lt;!&ndash;<TextView
+                       android:id="@+id/img_btn_mapNavigation"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="end"
+                       android:layout_weight="0.1"
+                       android:gravity="center"
+                       android:text="@string/fa_map_marker"
+                       android:textColor="@color/colorBlack"
+                       android:textSize="11dp" />&ndash;&gt;
+               </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#d6d6d6"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/cuisine_title"
+                    android:textSize="11dp" />
+
+                <!-- <TextView
+                     android:id="@+id/txt_details_cuisine_type"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.7"
+                     android:fontFamily="sans-serif"
+                     android:text="Chili cheese fry burger"
+                     android:textColor="#333333"
+                     android:textSize="11dp"
+                     android:textStyle="bold" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/discount_title"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/txt_details_discount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:fontFamily="sans-serif"
+                    android:text="Get 20% off"
+                    android:textColor="#3699ef"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/distance_title"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:fontFamily="sans-serif"
+                    android:text=" 2.1540"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d6d6d6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txt_details_avg_price"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/text_rate_round_shape"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="123"
+                        android:textColor="#FFFFFF"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:gravity="center">
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:id="@+id/buttonLike"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_round_shape"
+                        android:gravity="center"
+                        android:tag="0"
+                        android:text="{fa-heart-o}"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/buttonReviewCard"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_round_shape"
+                        android:src="@drawable/ic_chat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/buttonFavourite"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_round_shape"
+                        android:src="@drawable/ic_favourite"
+                        android:tag="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Avg. Price £"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/txtLikedText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="1.2k"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/txtReviewText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="240"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Favorite"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d6d6d6"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:id="@+id/timingScroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:scrollbars="none"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutTimingSlot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+            </HorizontalScrollView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerTimeSlot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:reverseLayout="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_button_style"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/layoutMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_details_menu_view"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/ic_restaurant_menu" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center"
+                        android:text="Menu"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/layoutTable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_details_table_book"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/ic_action_order_take_away"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center"
+                        android:text="Table"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/layoutTakeaway"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_details_restaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:src="@drawable/ic_more_only_dot"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_order_takeaway"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/ic_action_bookatable"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center"
+                        android:text="Takeaway"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/boxFacility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/menu_list_style"
+                android:visibility="gone">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/layoutFacilities"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/boxPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/menu_list_style"
+                android:visibility="gone">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/layoutThumblines"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp" />
+                </HorizontalScrollView>
+            </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/txtTableLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Table Map"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_back"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:divider="@android:color/black"
+        android:dividerHeight="0.5px"
+        android:elevation="7dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:outlineProvider="bounds"
+        android:visibility="gone"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/layoutBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtRestName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/about_restaurant"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_round_shape"
+                    android:src="@drawable/ic_favourite"
+                    android:tag="0"
+                    android:visibility="gone"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_round_shape">
+
+                    <Button
+                        android:id="@+id/btnRateLike"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/ic_like_border"
+                        android:clickable="false"
+                        android:text="5"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="7sp" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_details_close"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/button_round_shape"
+                    android:src="@drawable/ic_flip" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/boxFacility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/menu_list_style">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/layoutFacilities"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start|center"
+                        android:gravity="start|center"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/boxPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/menu_list_style">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/layoutThumblines"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerTimeSlotBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:reverseLayout="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/list_button_style"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/layout_details_menu_view_back"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/ic_restaurant_menu" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:text="Menu"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_details_table_book_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/ic_action_order_take_away"
+                            android:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:text="Table"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_details_tbl_map"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_details_table_map"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/ic_action_order_take_away"
+                            android:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:text="Table Map"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Table Map"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/book_table_btn_style"
+                android:drawableLeft="@drawable/ic_action_order_take_away"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/book_a_table"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView><!--</com.clickeat.customer.click_eatcustomer.BookTableInfo.ContentViewFlipper>-->
+</LinearLayout>

@@ -1,0 +1,396 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteApp"
+    tools:context="com.nexus.locum.locumnexus.fragments.AddressPersonalProfile">
+
+
+    <com.nexus.locum.locumnexus.customviews.UserTextView
+        android:id="@+id/tv_addNewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:tag="200"
+        android:textSize="21sp"
+        android:drawableLeft="@drawable/ic_add_primerycolor_24dp"
+        android:drawablePadding="10dp"
+        android:background="@color/whiteApp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Add New Address" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/md_grey_300"/>
+
+    <com.nexus.locum.locumnexus.customviews.UserTextView
+        android:id="@+id/tv_savedAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:gravity="center|left"
+        android:tag="200"
+        android:textSize="19sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Saved Address"
+        android:textAllCaps="true"/>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_homeaddress"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:contentPadding="12dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:id="@+id/tvstatic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:tag="200"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:text="Home Address"
+                android:drawableRight="@drawable/ic_home"/>
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:id="@+id/tv_editHomeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:tag="200"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_more_vert_grey_24dp"/>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_addressHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:visibility="visible">
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_addressLine1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="AddressLine1"/>
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_addressLine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="AddressLine2"/>
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_addressLine3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="AddressLine3"/>
+
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_town"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="Twon"/>
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="15sp"
+                    android:text="City"/>
+
+
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_Country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="Country"/>
+
+            </LinearLayout>
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_postcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="Post Code"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/ll_linesHomes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:background="@color/md_grey_300"/>
+
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/md_grey_300"/>
+
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:background="@color/md_grey_300"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_billing"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:contentPadding="12dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="200"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="Billing Address"
+                    android:drawableRight="@drawable/ic_invoice"/>
+
+            <com.nexus.locum.locumnexus.customviews.UserTextView
+                android:id="@+id/tv_editBillingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:tag="200"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_more_vert_grey_24dp"/>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_addressBilling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:visibility="visible">
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_addressLine1Billing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="AddressLine1"/>
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_addressLine2Billing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="AddressLine2"/>
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_addressLine3Billing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="AddressLine3"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tv_townBilling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:gravity="center|left"
+                        android:tag="100"
+                        android:textSize="15sp"
+                        android:text="Twon"/>
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tv_cityBilling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:gravity="center|left"
+                        android:tag="100"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="15sp"
+                        android:text="City"/>
+
+
+
+                    <com.nexus.locum.locumnexus.customviews.UserTextView
+                        android:id="@+id/tv_CountryBilling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:gravity="center|left"
+                        android:tag="100"
+                        android:textSize="15sp"
+                        android:text="Country"/>
+
+                </LinearLayout>
+
+                <com.nexus.locum.locumnexus.customviews.UserTextView
+                    android:id="@+id/tv_postcodeBilling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:tag="100"
+                    android:textSize="15sp"
+                    android:text="Post Code"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_linesBilling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:background="@color/md_grey_300"/>
+
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/md_grey_300"/>
+
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:background="@color/md_grey_300"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

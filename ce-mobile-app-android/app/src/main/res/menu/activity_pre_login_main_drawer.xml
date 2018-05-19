@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp02"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_change_password"
+            android:icon="@drawable/ic_change_password"
+            android:title="@string/change_password"
+            android:visible="false"/>
+    </group>
+    <group
+        android:id="@+id/grp03"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_notification"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/notification_setting"
+            android:visible="false"/>
+    </group>
+
+    <group
+        android:id="@+id/grpA"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="@string/faqs" />
+    </group>
+    <group
+        android:id="@+id/grpB"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_support"
+            android:icon="@drawable/ic_help"
+            android:title="@string/support" />
+    </group>
+    <group
+        android:id="@+id/grpC"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_about_us"
+            android:icon="@drawable/ic_aboutus"
+            android:title="@string/about" />
+    </group>
+
+</menu>

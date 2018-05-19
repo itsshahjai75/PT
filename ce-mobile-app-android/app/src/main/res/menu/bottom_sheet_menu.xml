@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/popularityGroup">
+        <item
+            android:id="@+id/popularity"
+            android:title="@string/title_popularity" />
+    </group>
+    <group android:id="@+id/ltohGroup">
+        <item
+            android:id="@+id/priceLtoH"
+            android:title="@string/title_price_low_to_high" />
+    </group>
+    <group android:id="@+id/htolGroup">
+        <item
+            android:id="@+id/priceHtoL"
+            android:title="@string/title_price_high_to_low" />
+    </group>
+    <group android:id="@+id/newGroup">
+        <item
+            android:id="@+id/newest"
+            android:title="@string/title_newest_first" />
+    </group>
+</menu>

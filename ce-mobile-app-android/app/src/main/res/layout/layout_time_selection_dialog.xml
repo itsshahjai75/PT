@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/dialogSpinnerTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown"
+        android:descendantFocusability="beforeDescendants"
+        android:visibility="gone"
+        android:entries="@array/items_time_dialog_selection"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeLayout"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <NumberPicker android:id="@+id/numberpickerMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_keyboard_arrow_up" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="30dp"
+                android:padding="7dp"
+                android:background="@drawable/book_table_btn_style"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_keyboard_arrow_down" />
+        </LinearLayout>
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_keyboard_arrow_up" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="30dp"
+                android:padding="7dp"
+                android:background="@drawable/book_table_btn_style"
+                android:textColor="@color/colorPrimary"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_keyboard_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnDialogTimeCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/btnDialogTimeOk"
+        android:background="@null"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/btnDialogTimeCancel"
+        android:layout_alignBottom="@+id/btnDialogTimeCancel"
+        android:layout_marginRight="16dp"
+        android:text="@string/ok" />
+
+</RelativeLayout>

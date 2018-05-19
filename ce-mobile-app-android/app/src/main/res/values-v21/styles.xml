@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="spinner_style_signup">
+        <item name="android:background">@drawable/spinner_style_signup</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:checkMarkTint">@color/colorPrimary</item>
+        <item name="android:radioButtonStyle">@style/radio_button</item>
+        <item name="android:buttonTint">@color/colorPrimary</item>
+        <item name="android:textSize">15sp</item>
+
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+</resources>

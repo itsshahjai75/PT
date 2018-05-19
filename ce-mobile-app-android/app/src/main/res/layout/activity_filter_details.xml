@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#F0F3F5"
+    android:orientation="vertical"
+    tools:context="com.clickeat.customer.click_eatcustomer.BookTableInfo.FilterDetails">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:paddingLeft="13dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:text="Filters"/>
+
+        <ImageButton
+            android:id="@+id/btnFilterClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close"
+            android:background="@color/colorWhite"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scrollFilters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutButtons"
+        android:layout_below="@id/layout_title"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:weightSum="1">
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="0.40"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:textSize="12dp"
+                        android:text="@string/club_member"
+                        android:buttonTint="@color/colorPrimary"
+                        android:id="@+id/chk_filter_member"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="0.33"
+                        android:layout_height="wrap_content"
+                        android:text="@string/meal_deals"
+                        android:textColor="#424242"
+                        android:textSize="12dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:id="@+id/chk_filter_meals"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="0.30"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offers"
+                        android:textColor="#424242"
+                        android:textSize="12dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:id="@+id/chk_filter_offers"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:tag="1"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/title_distance"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnDistanceExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutDistanceExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/distanceSB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="36dp"
+                        app:isb_indicator_color="@color/colorIndicator"
+                        app:isb_indicator_stay="true"
+                        app:isb_show_indicator="true"
+                        app:isb_indicator_text_color="@color/colorWhite"
+                        app:isb_indicator_type="rectangle"
+                        app:isb_max="10"
+                        app:isb_min="0"
+                        app:isb_progress="5"
+                        app:isb_thumb_width="8dp"
+                        app:isb_track_background_bar_color="@color/colorPrimaryDark"
+                        app:isb_track_progress_bar_color="@color/colorPrimary" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="14dp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/txtMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/txtMin"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginRight="14dp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="10" />
+                    </RelativeLayout>
+
+                    <!--<com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                           android:id="@+id/rangeSeekbar7"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           app:bar_color="#F7BB88"
+                           app:bar_highlight_color="#E07416"
+                           app:corner_radius="10"
+                           app:left_thumb_image="@drawable/ic_bookmark"
+                           app:max_value="1000"
+                           app:min_value="100"
+                           app:steps="5" />
+-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/title_price"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnPriceExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutPriceExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/txtMinPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtMaxPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:text="10"
+                        android:visibility="gone" />
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtMinPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/seekBarPriceIndicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBaseline="@+id/txtMinPrice"
+                            android:gravity="center"
+                            android:text="5"
+                            android:visibility="gone"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/txtMaxPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/txtMinPrice"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginRight="14dp"
+                            android:gravity="center"
+                            android:text="10" />
+                    </RelativeLayout>
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isb_max="10"
+                        app:isb_min="0"
+                        app:isb_thumb_progress_stay="true"
+                        app:isb_progress="5"
+                        app:isb_text_left_end="10"
+                        app:isb_text_right_end="0"
+                        app:isb_text_color="@color/colorPrimary"
+                        app:isb_thumb_color="@color/colorPrimary"
+                        app:isb_track_progress_bar_color="@color/colorPrimary"
+                        app:isb_show_indicator="false" />-->
+                    <SeekBar
+                        android:id="@+id/seekBarPrice"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBarPriceIndicator"
+                        android:layout_weight="1"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:max="10"
+                        android:padding="7dp"
+                        android:progress="5"
+                        android:progressTint="@color/colorPrimary"
+                        android:thumbOffset="10dp"
+                        android:thumbTint="@color/colorPrimary"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseQuick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/quick_filters"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnQuickExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutQuickExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/checkPureVeg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textColor="#424242"
+                        android:textSize="12dp"
+                        android:text="@string/pure_veg" />
+
+                    <CheckBox
+                        android:id="@+id/checkOpen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:textSize="12dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/open" />
+
+                    <CheckBox
+                        android:id="@+id/checkDelivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:textSize="12dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/quick_delivery" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseCuisine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/title_cuisine"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnCuisineExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCuisineExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <ListView
+                        android:id="@+id/listviewCuisines"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DCDCDC" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseCollection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:tag="3"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/collection_or_delivery_or_both"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnCollectionExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollectionExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxCollection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/collection_title" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/delivery_title" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DCDCDC" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/customer_rating"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnRatingExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseFacility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:tag="4"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/facilities_title"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnFacilitiesExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutFacilityExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <ListView
+                        android:id="@+id/listviewFacilities"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseDiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:tag="5"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/special_diets"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnDietsExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:background="@drawable/ic_keyboard_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutSpecialDietExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <ListView
+                        android:id="@+id/listviewSpecialDiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DCDCDC" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/title_offer"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnOfferExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/hygiene_ratings"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnHygineExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollapseAvgPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:tag="1"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="15dp"
+                        android:text="@string/average_price_2_adults"
+                        android:textColor="#424242"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnAvgPriceExpand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/ic_keyboard_arrow_right"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC" />
+
+                <LinearLayout
+                    android:id="@+id/layoutAvgPriceExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/averagePriceSB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="36dp"
+                        app:isb_indicator_color="@color/colorIndicator"
+                        app:isb_indicator_stay="true"
+                        app:isb_indicator_text_color="@color/colorWhite"
+                        app:isb_indicator_type="rectangle"
+                        app:isb_show_indicator="true"
+                        app:isb_max="50"
+                        app:isb_min="10"
+                        app:isb_progress="20"
+                        app:isb_thumb_width="8dp"
+                        app:isb_track_background_bar_color="@color/colorPrimaryDark"
+                        app:isb_track_progress_bar_color="@color/colorPrimary"
+                        app:isb_track_rounded_corners="true" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtMinAvgPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="£10" />
+
+                        <TextView
+                            android:id="@+id/txtMaxAvgPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/txtMinAvgPrice"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center"
+                            android:text="£50" />
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekBarAvgPrice"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBarAvgPriceIndicator"
+                        android:layout_weight="1"
+                        android:max="50"
+                        android:min="10"
+                        android:padding="7dp"
+                        android:progress="20"
+                        android:theme="@style/MySeekBarTheme"
+                        android:thumbOffset="10dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC" />
+
+        <Button
+            android:id="@+id/btnResetFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/reset"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btnApplyFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnResetFilter"
+            android:layout_alignBottom="@+id/btnResetFilter"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:gravity="center_vertical|end"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:text="@string/title_apply"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+</RelativeLayout>
