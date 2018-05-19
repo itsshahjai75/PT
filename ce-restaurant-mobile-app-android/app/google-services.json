@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "948282597193",
+    "firebase_url": "https://cera-48ba9.firebaseio.com",
+    "project_id": "cera-48ba9",
+    "storage_bucket": "cera-48ba9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948282597193:android:48f71170c4e1d9d3",
+        "android_client_info": {
+          "package_name": "com.clickeat.restaurant.click_eatrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948282597193-n2kngb57233jr3ihdiagh6l8ehkfrrta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_VNeFd9Cug-P96UWtFl1KHxnlJm3uM7w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

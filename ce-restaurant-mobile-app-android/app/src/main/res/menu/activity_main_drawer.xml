@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_home"
+            android:icon="@drawable/ic_web_home"
+            android:title="@string/menu_title_home" />
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/menu_title_feedback" />
+    </group>
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/menu_title_help" />
+    </group>
+
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/setting_menu_title" />
+    </group>
+    <group
+        android:id="@+id/grp5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ic_action_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_title_logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clickeat.restaurant.click_eatrestaurant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".Signup"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Forgotpassword"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".NavigationMainScreen"
+            android:label="@string/title_activity_navigation_main_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".BookATable"
+            android:theme="@style/MyAppCompatDialogTheme" />
+        <activity
+            android:name=".BookingDetailsForm"
+            android:theme="@style/MyAppCompatDialogTheme" />
+
+        <meta-data
+            android:name="com.pushwoosh.appid"
+            android:value="@string/pushwoosh_app_id" />
+        <meta-data
+            android:name="com.pushwoosh.senderid"
+            android:value="@string/fcm_sender_id" />
+        <meta-data
+            android:name="com.pushwoosh.notification_icon"
+            android:value="@drawable/notification_small_icon" />
+        <meta-data
+            android:name="com.pushwoosh.notification_icon_color"
+            android:value="@color/notification_icon_color" />
+        <meta-data
+            android:name="com.pushwoosh.notification_service_extension"
+            android:value=".NotificationServiceSample" />
+        <meta-data
+            android:name="com.pushwoosh.notification_factory"
+            android:value=".NotificationFactorySample" />
+
+        <!-- Application Receivers -->
+        <receiver
+            android:name=".broadcastreceivers.NotificationButtonReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="${applicationId}.action.NOTIFICATION_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".UnavailableTableActivity" />
+        <activity
+            android:name=".AddUnavailableTableActivity"
+            android:theme="@style/DialogTheme" />
+        <activity android:name=".MenuManagementCustomerApp" />
+        <activity android:name=".MenuManagmentExpandable"></activity>
+    </application>
+
+</manifest>

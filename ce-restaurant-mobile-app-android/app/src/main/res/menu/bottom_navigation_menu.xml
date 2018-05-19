@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_book_table"
+        android:icon="@drawable/ic_action_order_take_away"
+        android:title="@string/table_request"/>
+
+    <item
+        android:id="@+id/action_take_order"
+        android:icon="@drawable/ic_action_bookatable"
+        android:title="@string/order_request"/>
+</menu>

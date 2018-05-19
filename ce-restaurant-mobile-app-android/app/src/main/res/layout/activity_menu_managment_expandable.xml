@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuManagmentExpandable">
+
+    <ExpandableListView
+        android:id="@+id/expandTandC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:groupIndicator="@null"
+        android:background="@android:color/white">
+    </ExpandableListView>
+
+</FrameLayout>

@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">CERA</string>
+
+    <string name="pushwoosh_app_id">D3C64-DCE38</string>
+    <string name="fcm_sender_id">948282597193</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="need_help">Need help? support team 24/7</string>
+    <string name="txt_call">077 3863 6652</string>
+    <string name="enter_restaurant_name">Enter Restaurant Name</string>
+    <string name="enter_restaurant_email">Enter Restaurant Email</string>
+    <string name="enter_restaurant_mobile_number">Enter Restaurant Mobile Number</string>
+    <string name="enter_restaurant_postcode">Enter Restaurant Postcode</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_restaurant_password_again">Enter Restaurant Password Again</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="login_register">login</string>
+    <string name="mail_error">Email cannot be Blank</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="password_error">Password cannot be blank</string>
+    <string name="wrong_email_password">Email or Password may be wrong!!!!</string>
+    <string name="check_server_connection">Please check your Server</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_content">We just need your registered Email Id\nto send your reset password instruction.</string>
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="mail_sent">Mail Sent !!</string>
+    <string name="main_not_registered">Email id is not registered</string>
+    <string name="lbl_loading">Loading ....</string>
+    <string name="menu_title_home">Home</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="menu_title_logout">Logout</string>
+    <string name="table_request">Table Request</string>
+    <string name="order_request">Order Request</string>
+    <string name="setting_menu_title">Setting</string>
+    <string name="menu_title_feedback">Feedback</string>
+    <string name="menu_title_about">About</string>
+    <string name="menu_title_faq">FAQ</string>
+    <string name="menu_title_support">Support</string>
+    <string name="menu_title_help">Help</string>
+    <string name="checkedMark">\u2713</string>
+
+    <string name="update">Update</string>
+    <string name="nobookings">No Bookings Found.</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="copyright">copyright @ ClickEat Inc</string>
+
+
+    <string name="static_opsmanager">Ops Manager</string>
+    <string name="tab_awaiting">Awaiting </string>
+    <string name="tab_upcomming">Upcoming</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_bookings">Bookings</string>
+    <string name="menu_takeaway">Takeaway</string>
+    <string name="menu_walkin">WalkIn</string>
+    <string name="menu_more">More</string>
+
+    <string name="hint_name">Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="total_person">Total Person</string>
+    <string name="booking_date">Booking Date</string>
+
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="book">Book</string>
+    <string name="cancelConfirm">Cancel</string>
+    <string name="bookConfirm">Confirm</string>
+
+
+    <string-array name="status_book_table">
+        <item>All</item>
+        <item>Accepted</item>
+        <item>Rejected</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Help</item>
+        <item>Feedback</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+    <string name="title_activity_navigation_main_screen">NavigationMainScreen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="requestedavailable">Requested Available</string>
+    <string name="requestedunavailable">Requested Unavailable</string>
+    <string name="available">Available</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="booked">Booked</string>
+
+    <string name="unavailableTable">Unavailable Table</string>
+    <string name="addUavailable">Add Unavailable Table</string>
+    <string name="from">From</string>
+    <string name="to">  To</string>
+    <string name="floor">Floor</string>
+    <string name="table">Table</string>
+    <string name="room">Room</string>
+    <string name="reason">Reason</string>
+
+    <string name="confirm">Confirm</string>
+
+    <string name="amend">Amend</string>
+    <string name="suggest">Suggest</string>
+    <string name="note">Note</string>
+
+
+    <string name="customer_name">Customer Name</string>
+
+</resources>

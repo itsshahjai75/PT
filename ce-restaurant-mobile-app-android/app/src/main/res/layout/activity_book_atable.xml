@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".BookATable">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="7dp"
+        android:background="@drawable/round_corner_greyborder"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book A Table: "
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Restaurant Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner_greyborder">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_ic_user_name"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/enter_restaurant_name"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner_greyborder">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_mail_28dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/colorBlack"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/email_address"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner_greyborder">
+
+                <EditText
+                    android:id="@+id/input_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_phone_28dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/mobile_no"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner_greyborder"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/input_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_pepole_black_28dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/total_person"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner_greyborder"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinnerTableNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner_greyborder">
+
+                <EditText
+                    android:id="@+id/input_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_calendar_28dp"
+                    android:drawablePadding="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/booking_date"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+           <LinearLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/round_corner_greyborder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/txtBookTime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:drawableLeft="@drawable/ic_access_time"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/txtBookTable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:drawableLeft="@drawable/ic_table"
+                        android:drawableTint="@color/colorBlack"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/txtSelectionTable"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/round_corner_greyborder"
+                        android:src="@drawable/ic_editicon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+               android:id="@+id/recyclerBookTimeSlot"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="7dp"
+               android:background="@drawable/round_corner_greyborder"
+               android:divider="@null"
+               android:orientation="horizontal"
+               android:visibility="gone"
+               app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+               app:reverseLayout="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner_greyborder">
+
+                <EditText
+                    android:id="@+id/txtAdditionalNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Add additional note here...."
+                    android:maxLength="100"
+                    android:padding="10dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/round_corner_greyborder">
+                <TextView
+                    android:id="@+id/txtLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Choose Table"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBookCancelConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnBookConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/scroll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/scroll"
+        android:background="@null"
+        android:text="@string/bookConfirm"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

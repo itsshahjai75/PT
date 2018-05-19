@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.clickeat.restaurant.click_eatrestaurant.customviews.UserTextView
+    android:tag="100"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="17sp"
+    android:gravity="left"
+    android:padding="5dp"
+    android:layout_margin="1dp"/>

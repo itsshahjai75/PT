@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+
+    <ImageView
+        android:id="@+id/img_far_indicator"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:src="@drawable/group_indicator"/>
+
+    <com.clickeat.restaurant.click_eatrestaurant.customviews.UserTextView
+        android:tag="200"
+        android:id="@+id/lblListHeader"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asfsafasf"
+        android:paddingLeft="10dp"
+        android:textSize="17sp" />
+
+</LinearLayout>

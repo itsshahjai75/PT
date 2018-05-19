@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/android/Desktop/ce-restaurant-mobile-app-android/library/build/intermediates/res/merged/androidTest/debug/drawable_shadow_bottom.xml.flat",
+        "source": "/home/android/Desktop/ce-restaurant-mobile-app-android/library/build/intermediates/packaged_res/debug/drawable/shadow_bottom.xml"
+    },
+    {
+        "merged": "/home/android/Desktop/ce-restaurant-mobile-app-android/library/build/intermediates/res/merged/androidTest/debug/drawable_shadow_right.xml.flat",
+        "source": "/home/android/Desktop/ce-restaurant-mobile-app-android/library/build/intermediates/packaged_res/debug/drawable/shadow_right.xml"
+    },
+    {
+        "merged": "/home/android/Desktop/ce-restaurant-mobile-app-android/library/build/intermediates/res/merged/androidTest/debug/drawable_shadow_top.xml.flat",
+        "source": "/home/android/Desktop/ce-restaurant-mobile-app-android/library/build/intermediates/packaged_res/debug/drawable/shadow_top.xml"
+    },
+    {
+        "merged": "/home/android/Desktop/ce-restaurant-mobile-app-android/library/build/intermediates/res/merged/androidTest/debug/drawable_shadow_left.xml.flat",
+        "source": "/home/android/Desktop/ce-restaurant-mobile-app-android/library/build/intermediates/packaged_res/debug/drawable/shadow_left.xml"
+    }
+]

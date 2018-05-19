@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingDetailsForm">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="7dp"
+        android:weightSum="1"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_name"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_gravity="center"
+            android:text="Restaurant Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+
+        <ImageButton
+            android:id="@+id/btnBookClose"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_close_red_24dp"
+            android:tint="@color/md_red_900"
+            android:layout_gravity="end"
+            android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutHeader"
+        android:weightSum="1"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/booking_date"
+            android:textSize="12dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end">
+            <EditText
+                android:id="@+id/input_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="end|center"
+                android:hint="@string/total_person"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.inqbarna.tablefixheaders.TableFixHeaders
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/scroll"
+        android:layout_margin="7dp"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footerButtons"
+        android:layout_margin="7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_noteforOpsManager"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/note"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_corner_grey_border"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/available"/>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_corner_grey_filled"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/unavailable"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:text="@string/checkedMark"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_corner_green_filled"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/requestedavailable"/>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:text="@string/checkedMark"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_corner_grey_filled"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/requestedunavailable"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:text="@string/checkedMark"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_corner_yellow_filled"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/amend"/>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/round_corner_primary_filled"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/booked"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/btnBookDone"
+            android:text="Done"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:layout_margin="7dp"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"/>
+
+
+        <Button
+            android:id="@+id/btnConfirmBooking"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:background="@drawable/round_corner_button_accept"
+            android:text="@string/confirm"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorGreen" />
+
+        <Button
+            android:id="@+id/btnAmendBooking"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_corner_yellow_border"
+            android:text="@string/suggest"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/md_yellow_700" />
+
+        <Button
+            android:id="@+id/btnCancelBooking"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_corner_button_reject"
+            android:text="@string/unavailable"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/md_red_700" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

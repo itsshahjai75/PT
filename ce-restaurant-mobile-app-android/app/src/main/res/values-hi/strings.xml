@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Click-Eat Restaurant</string>
+    <string name="enter_restaurant_password_again">रेस्तरां पासवर्ड फिर से दर्ज करें</string>
+    <string name="enter_restaurant_postcode">रेस्तरां पोस्टकोड दर्ज करें</string>
+    <string name="enter_your_password">अपना पासवर्ड डालें</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="invalid_email">अवैध ईमेल</string>
+    <string name="lbl_loading">लोड हो रहा है ....</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="login_register">लॉग इन करें</string>
+    <string name="mail_error">ईमेल खाली नहीं हो सकता</string>
+    <string name="mail_sent">संदेश भेज दिया गया !!</string>
+    <string name="main_not_registered">ईमेल आईडी पंजीकृत नहीं है</string>
+    <string name="menu_title_feedback">प्रतिक्रिया</string>
+    <string name="menu_title_help">मदद</string>
+    <string name="menu_title_home">घर</string>
+    <string name="menu_title_logout">लोग आउट</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉवर को बंद करें</string>
+    <string name="navigation_drawer_open">नेविगेशन ड्रॉवर खोलें</string>
+    <string name="need_help">मदद चाहिए? हमारे समर्थन टीम 24/7 को कॉल करें</string>
+    <string name="order_request">ऑर्डर अनुरोध</string>
+    <string name="password">पासवर्ड</string>
+    <string name="password_error">पासवर्ड रिक्त नहीं हो सकता</string>
+    <string name="remember_me">मुझे याद रखना</string>
+    <string name="setting_menu_title">सेटिंग</string>
+    <string name="reset_password">पासवर्ड रीसेट</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="table_request">टेबल अनुरोध</string>
+    <string name="title_activity_main">मुख्य गतिविधि</string>
+    <string name="txt_call">077 3863 6652</string>
+    <string name="welcome">स्वागत हे</string>
+    <string name="wrong_email_password">ईमेल या पासवर्ड गलत हो सकता है !!!!</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="already_have_an_account">क्या आपके पास पहले से एक खाता मौजूद है?</string>
+    <string name="check_server_connection">कृपया अपने सर्वर की जांच करें</string>
+    <string name="drawer_close">दराज बंद करें</string>
+    <string name="drawer_open">ड्रॉवर ओपन</string>
+    <string name="email_address">ईमेल पता</string>
+    <string name="enter_email_address">ईमेल पता दर्ज</string>
+    <string name="enter_email_id">ईमेल आईडी दर्ज करें</string>
+    <string name="enter_restaurant_email">रेस्तरां ईमेल दर्ज करें</string>
+    <string name="enter_restaurant_mobile_number">रेस्तरां मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_restaurant_name">रेस्तरां नाम दर्ज करें</string>
+</resources>
